@@ -1,0 +1,6 @@
+.popup__success {
+  background-image: url(/src/images/IconSuccess.png);
+  width: 120px;
+  height: 120px;
+  margin-bottom: 32px;
+}

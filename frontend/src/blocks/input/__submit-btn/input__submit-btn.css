@@ -1,0 +1,25 @@
+.input__submit-btn {
+  background-color: #000000;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 2px;
+  color: #FFFFFF;
+  height: 50px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .input__submit-btn {
+    height: 46px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.input__submit-btn:hover {
+  opacity: 80%;
+}

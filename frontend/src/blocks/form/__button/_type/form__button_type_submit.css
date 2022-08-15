@@ -1,0 +1,13 @@
+.form__button_type_submit {
+  background-color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 2px;
+  color: #000000;
+  height: 50px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 216px;
+}

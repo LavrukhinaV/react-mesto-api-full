@@ -1,0 +1,6 @@
+.popup__failed {
+  background-image: url(/src/images/IconFall.png);
+  width: 120px;
+  height: 120px;
+  margin-bottom: 32px;
+}

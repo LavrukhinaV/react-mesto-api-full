@@ -1,0 +1,11 @@
+.header__link{
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+
+.header__link_none {
+  display: none;
+}

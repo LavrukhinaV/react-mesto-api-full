@@ -1,0 +1,27 @@
+.element__button-like {
+  width: 22px;
+  height: 19px;
+  background-color: #FFFFFF;
+  border: none;
+  padding: 0;
+  transition: 1s;
+  cursor: pointer;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  justify-self: center;
+  align-self: end;
+}
+
+.element__button-like:hover {
+  opacity: 50%;
+}
+
+.element__button-like_active {
+  background-image: url(/src/images/Like_Button_Disabled.svg);
+}
+
+.element__button-like_inactive {
+  background-image: url(/src/images/Like_Button.svg);
+}
