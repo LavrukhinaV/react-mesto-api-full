@@ -12,7 +12,7 @@ export const register = (email, password) => {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'Origin': 'http://localhost:3000'
+      'Origin': 'http://lavrukhina.nomoredomains.sbs'
     },
     body: JSON.stringify({email, password})
   })
@@ -25,7 +25,7 @@ export const authorize = (email, password) => {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'Origin': 'http://localhost:3000'
+      'Origin': 'http://lavrukhina.nomoredomains.sbs'
     },
     body: JSON.stringify({email, password})
   })
