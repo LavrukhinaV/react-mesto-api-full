@@ -37,7 +37,7 @@ class Api {
       headers: {
         authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
         'Content-Type': 'application/json',
-        'Origin': 'http://localhost:3001'
+        'Origin': 'http://localhost:3000'
       },
       body: JSON.stringify(newInfo)
     })
@@ -50,7 +50,7 @@ class Api {
       headers: {
         authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
         'Content-Type': 'application/json',
-        'Origin': 'http://localhost:3001'
+        'Origin': 'http://localhost:3000'
       },
       body: JSON.stringify(avatar)
     })
@@ -80,7 +80,7 @@ class Api {
       headers: {
         authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
         'Content-Type': 'application/json',
-        'Origin': 'http://localhost:3001'
+        'Origin': 'http://localhost:3000'
       }
     })
     .then(this._checkReponse)
@@ -104,11 +104,11 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'http://api.lavrukhina.nomoredomains.sbs',
   headers: {
     authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
     'Content-Type': 'application/json',
-    'Origin': 'http://localhost:3001'
+    'Origin': 'http://localhost:3000'
   }
 }); 
 
