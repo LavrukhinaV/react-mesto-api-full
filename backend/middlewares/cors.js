@@ -1,5 +1,7 @@
 const allowedCors = [
-  'http://localhost:3001',
+  'https://lavrukhina.nomoredomains.sbs',
+  'http://lavrukhina.nomoredomains.sbs',
+  'localhost:3000',
 ];
 
 // eslint-disable-next-line consistent-return
