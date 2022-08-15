@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://api.lavrukhina.nomoredomains.sbs';
+export const BASE_URL = 'https://api.lavrukhina.nomoredomains.sbs';
 const checkResponse = (res) => {
   if (res.ok) {
     return res.json();
@@ -12,7 +12,7 @@ export const register = (email, password) => {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'Origin': 'http://lavrukhina.nomoredomains.sbs'
+      'Origin': 'https://lavrukhina.nomoredomains.sbs'
     },
     body: JSON.stringify({email, password})
   })
@@ -25,7 +25,7 @@ export const authorize = (email, password) => {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'Origin': 'http://lavrukhina.nomoredomains.sbs'
+      'Origin': 'https://lavrukhina.nomoredomains.sbs'
     },
     body: JSON.stringify({email, password})
   })

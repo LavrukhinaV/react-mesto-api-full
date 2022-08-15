@@ -37,7 +37,7 @@ class Api {
       headers: {
         authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
         'Content-Type': 'application/json',
-        'Origin': 'http://lavrukhina.nomoredomains.sbs'
+        'Origin': 'https://lavrukhina.nomoredomains.sbs'
       },
       body: JSON.stringify(newInfo)
     })
@@ -50,7 +50,7 @@ class Api {
       headers: {
         authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
         'Content-Type': 'application/json',
-        'Origin': 'http://lavrukhina.nomoredomains.sbs'
+        'Origin': 'https://lavrukhina.nomoredomains.sbs'
       },
       body: JSON.stringify(avatar)
     })
@@ -80,7 +80,7 @@ class Api {
       headers: {
         authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
         'Content-Type': 'application/json',
-        'Origin': 'http://lavrukhina.nomoredomains.sbs'
+        'Origin': 'https://lavrukhina.nomoredomains.sbs'
       }
     })
     .then(this._checkReponse)
@@ -104,11 +104,11 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://api.lavrukhina.nomoredomains.sbs',
+  baseUrl: 'https://api.lavrukhina.nomoredomains.sbs',
   headers: {
     authorization: `Bearer ${localStorage.getItem('jwtToken')}`,
     'Content-Type': 'application/json',
-    'Origin': 'http://lavrukhina.nomoredomains.sbs'
+    'Origin': 'https://lavrukhina.nomoredomains.sbs'
   }
 }); 
 
