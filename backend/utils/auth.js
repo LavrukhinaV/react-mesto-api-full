@@ -8,5 +8,6 @@ const getJwtToken = (id) => jwt.sign({ id }, NODE_ENV === 'production' ? JWT_SEC
 
 module.exports = {
   getJwtToken,
+  NODE_ENV,
   JWT_SECRET,
 };
