@@ -7,7 +7,7 @@ const { login, createUser } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 const errorHandler = require('./middlewares/errorHandler');
 const NotFoundError = require('./errors/not-found-err');
-// const { requestLogger, errorLogger } = require('./middlewares/logger');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 const cors = require('./middlewares/cors');
 
 const app = express();
@@ -49,7 +49,7 @@ app.post('/signup', celebrate({
 
 app.use(auth);
 
-// app.use(requestLogger);
+app.use(requestLogger);
 
 app.use('/users', require('./routes/users'));
 app.use('/cards', require('./routes/cards'));
@@ -58,7 +58,7 @@ app.use((req, res, next) => {
   next(new NotFoundError('Неправильный адрес'));
 });
 
-// app.use(errorLogger);
+app.use(errorLogger);
 
 app.use(errors());
 
